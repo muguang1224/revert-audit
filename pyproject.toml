@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "revert-audit"
+version = "0.1.0"
+description = "Measure how often CI was green on changes that were later reverted."
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+license = { text = "MIT" }
+authors = [{ name = "muguang1224" }]
+keywords = ["ci", "github", "revert", "audit", "metrics", "zero-dependencies"]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Operating System :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/muguang1224/revert-audit"
+
+[project.scripts]
+revert-audit = "revert_audit:main"
+
+[tool.setuptools]
+py-modules = ["revert_audit"]

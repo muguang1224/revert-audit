@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-label="revert-audit example output">
+  <defs>
+    <linearGradient id="term" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="620" rx="18" fill="url(#term)" stroke="#1e293b"/>
+  <rect x="0" y="0" width="1200" height="44" rx="18" fill="#111c30"/>
+  <rect x="0" y="26" width="1200" height="18" fill="#111c30"/>
+  <circle cx="26" cy="22" r="6" fill="#ef4444"/>
+  <circle cx="48" cy="22" r="6" fill="#f59e0b"/>
+  <circle cx="70" cy="22" r="6" fill="#22c55e"/>
+  <text x="96" y="27" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">revert-audit owner/repo — example output</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">
+    <text x="36" y="86" fill="#e2e8f0">revert-audit 0.1.0 -- owner/repo</text>
+    <text x="36" y="112" fill="#94a3b8">scanned 300 commits</text>
+
+    <text x="36" y="154" fill="#38bdf8" font-size="14" letter-spacing="2">REVERTS</text>
+    <text x="36" y="180" fill="#cbd5e1">found 31 commits; 28 unique changes; 2 duplicates; 2 re-lands; 1 unidentified</text>
+
+    <text x="36" y="222" fill="#38bdf8" font-size="14" letter-spacing="2">CI AT THE TIME OF THE ORIGINAL CHANGE</text>
+    <text y="250"><tspan x="60" fill="#34d399">green</tspan><tspan x="200" fill="#e2e8f0">18</tspan><tspan x="280" fill="#94a3b8">64.3% of known</tspan></text>
+    <text y="276"><tspan x="60" fill="#ef4444">failed</tspan><tspan x="200" fill="#e2e8f0">10</tspan><tspan x="280" fill="#94a3b8">35.7% of known</tspan></text>
+    <text y="302"><tspan x="60" fill="#94a3b8">unknown</tspan><tspan x="200" fill="#e2e8f0">3</tspan></text>
+
+    <text x="36" y="340" fill="#f59e0b">CI false-negative rate on reverted changes: 64.3%</text>
+
+    <text x="36" y="378" fill="#94a3b8">median time to revert: 6.5 days</text>
+    <text x="36" y="404" fill="#94a3b8">median change size:    84 lines</text>
+    <text x="36" y="430" fill="#94a3b8">tests touched:         8/25 (32.0%)</text>
+
+    <text x="36" y="472" fill="#38bdf8" font-size="14" letter-spacing="2">REVERTS (newest first)</text>
+    <text y="500" fill="#64748b" font-size="14"><tspan x="36">REVERT</tspan><tspan x="150">ORIGINAL</tspan><tspan x="270">REVERTED</tspan><tspan x="390">CI</tspan><tspan x="480">FILES</tspan><tspan x="560">SUBJECT</tspan></text>
+    <text y="526" fill="#cbd5e1"><tspan x="36">a1b2c3d</tspan><tspan x="150">d4e5f6a</tspan><tspan x="270">2026-09-14</tspan><tspan x="390" fill="#34d399">green</tspan><tspan x="480">4</tspan><tspan x="560">Revert "Use cache v2"</tspan></text>
+    <text y="552" fill="#cbd5e1"><tspan x="36">b2c3d4e</tspan><tspan x="150">e5f6a7b</tspan><tspan x="270">2026-08-30</tspan><tspan x="390" fill="#ef4444">failed</tspan><tspan x="480">9</tspan><tspan x="560">Revert "Retry all requests"</tspan></text>
+
+    <text x="36" y="592" fill="#475569" font-size="13">'green' = every observed check passed. It does not prove the change was correct.</text>
+  </g>
+</svg>
